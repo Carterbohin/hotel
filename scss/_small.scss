@@ -117,6 +117,23 @@ main {
 }// end main
 
 
+#allHotels {
+    section{
+        display: grid;
+        grid-template-areas: 
+        "name" 
+        "photo" 
+        "address"
+        "number";
+    }
+    img{grid-area: photo;}
+    h2{grid-area: name;}
+    p{grid-area: address;}
+    p.address{ grid-area: phone;}
+}//end of hotels
+
+
+
 
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {
