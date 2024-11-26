@@ -1,1 +1,16 @@
 /* NAVIGATION STUFF GOES HERE  */
+#allHotels {
+    section {
+    grid-template-areas: 
+        "photo name"
+        "photo address"
+        "photo phone" ;
+        column-gap: 8px;
+        grid-template-columns: auto 1fr;
+        justify-items: start;
+        text-align: left;
+        align-items: start;
+        margin: 5px;
+        padding: auto;
+}
+}

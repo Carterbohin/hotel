@@ -117,20 +117,49 @@ main {
 }// end main
 
 
-#allHotels {
-    section{
-        display: grid;
-        grid-template-areas: 
-        "name" 
-        "photo" 
+#allHotels section {
+    display: grid;
+    grid-template-areas: 
+        "name"
+        "photo"
         "address"
-        "number";
-    }
-    img{grid-area: photo;}
-    h2{grid-area: name;}
-    p{grid-area: address;}
-    p.address{ grid-area: phone;}
-}//end of hotels
+        "phone";
+    gap: 10px; /* Adds spacing between grid items */
+    row-gap: 8px;
+    text-align: center; /* Center-align all text */
+        justify-items: center; /* Center-align content horizontally */
+        align-items: center; /* Center-align content vertically */
+}
+
+#allHotels img {
+    grid-area: photo;
+    width: 100%; /* Ensures images are responsive */
+    height: auto;
+    max-width: 350px;
+}
+
+#allHotels h2 {
+    grid-area: name;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+#allHotels p {
+    margin: 0; /* Removes default margin to avoid extra space */
+}
+
+#allHotels p.address {
+    grid-area: address;
+    margin: 0;
+}
+
+#allHotels p.phone {
+    grid-area: phone;
+    font-weight: bold; /* Optional styling */
+    margin: 0;
+}
+
+
 
 
 
