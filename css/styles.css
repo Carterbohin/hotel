@@ -335,7 +335,7 @@ header {
 header span {
   font-size: 1.6rem;
   font-weight: 300;
-  color: #1d295f;
+  color: #0f1467;
 }
 
 /* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
@@ -372,13 +372,13 @@ nav ul li a {
   text-align: right;
   border-bottom: 1px rgba(0, 0, 0, 0.25) solid;
   text-decoration: none;
-  color: #1d295f;
+  color: #0f1467;
 }
 nav ul li a:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
 nav li.active a {
-  color: #7c1d47;
+  color: #d3a418;
 }
 
 .moveOver #hamburgerBtn::before {
@@ -399,7 +399,7 @@ nav li.active a {
 main h1 {
   padding: 1rem 10px 0.5rem 10px;
   font-size: 1.5rem;
-  color: #7c1d47;
+  color: #d3a418;
   font-weight: 300;
 }
 main p {
@@ -418,37 +418,51 @@ main p {
   align-items: center; /* Center-align content vertically */
 }
 
-#allHotels img {
-  grid-area: photo;
-  width: 100%; /* Ensures images are responsive */
-  height: auto;
-  max-width: 350px;
+#allHotels section {
+  display: grid;
+  gap: 8px;
+  background-color: #773a3a; /* Card background color */
+  margin: 10px;
+  padding: 16px; /* Adds space inside the card */
+  border-radius: 8px; /* Optional rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for a card effect */
+  color: #fff;
 }
-
-#allHotels h2 {
+#allHotels section img {
+  grid-area: photo;
+  width: 100%;
+  height: auto;
+  max-width: 300px; /* Ensures images are responsive */
+}
+#allHotels section h2 {
   grid-area: name;
   font-size: 1.5rem;
   margin: 0;
 }
-
-#allHotels p {
+#allHotels section p {
   margin: 0; /* Removes default margin to avoid extra space */
+  color: #ffffff;
 }
-
-#allHotels p.address {
+#allHotels section p.address {
   grid-area: address;
+  color: #ffffff;
   margin: 0;
 }
-
-#allHotels p.phone {
-  grid-area: phone;
-  font-weight: bold; /* Optional styling */
+#allHotels section p.phone {
   margin: 0;
+  grid-area: phone;
+  font-weight: bold;
+  background-color: #d3a418; /* Button background color */
+  color: #000000; /* Button text color */
+  padding: 8px 16px; /* Padding for button-like appearance */
+  border-radius: 4px; /* Rounded corners for button shape */
+  text-align: center; /* Center-align the text */
+  display: inline-block; /* Ensures the button has appropriate dimensions */
 }
 
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {
-  background-color: #1d295f;
+  background-color: #0f1467;
 }
 
 footer {

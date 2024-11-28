@@ -26,7 +26,9 @@ hotels.forEach(hotel => {
     theAddress.textContent = hotel.address;
 
     const thePhone = document.createElement('p');
+    thePhone.classList.add('phone');  // Add this line to ensure the correct class is applied
     thePhone.textContent = hotel.phone;
+    
 
     mySection.appendChild(theImage);
     mySection.appendChild(theName);
