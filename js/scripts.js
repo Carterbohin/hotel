@@ -23,7 +23,8 @@ hotels.forEach(hotel => {
     theName.textContent = hotel.name;
 
     const theAddress = document.createElement('p');
-    theAddress.textContent = hotel.address;
+    theAddress.innerHTML = hotel.address.replace(',', ',<br>'); // Inserts a line break after the comma
+    
 
     const thePhone = document.createElement('p');
     thePhone.classList.add('phone');  // Add this line to ensure the correct class is applied

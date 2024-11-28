@@ -146,7 +146,8 @@ main {
             grid-area: photo;
             width: 100%;
             height: auto;
-            max-width: 300px; /* Ensures images are responsive */
+            max-width: 250px; /* Ensures images are responsive */
+            border-radius: 5px;
         }
 
         h2 {
@@ -164,6 +165,9 @@ main {
             grid-area: address;
             color: #ffffff;
             margin: 0; 
+            max-width: 200px;
+            word-wrap: break-word;
+            white-space: normal;
         }
 
         p.phone {

@@ -432,7 +432,8 @@ main p {
   grid-area: photo;
   width: 100%;
   height: auto;
-  max-width: 300px; /* Ensures images are responsive */
+  max-width: 250px; /* Ensures images are responsive */
+  border-radius: 5px;
 }
 #allHotels section h2 {
   grid-area: name;
@@ -447,6 +448,9 @@ main p {
   grid-area: address;
   color: #ffffff;
   margin: 0;
+  max-width: 200px;
+  word-wrap: break-word;
+  white-space: normal;
 }
 #allHotels section p.phone {
   margin: 0;
